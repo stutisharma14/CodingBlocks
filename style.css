@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #333;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+.controls {
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.controls input, .controls select, .controls button {
+  padding: 0.5em;
+  font-size: 14px;
+}
+
+.form-section {
+  background: #fff;
+  padding: 1em;
+  margin: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+#blogsContainer {
+  padding: 1em;
+}
+
+.blog {
+  background: white;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-left: 4px solid #007BFF;
+}
+
+.blog h3 {
+  margin-top: 0;
+}
+
+.blog .actions button {
+  margin-right: 0.5em;
+}

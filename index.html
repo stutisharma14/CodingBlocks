@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <h1>Blog Platform</h1>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Blogs</a>
+      <a href="#">Admin</a>
+    </div>
+  </nav>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search by Title..." />
+    <select id="authorFilter">
+      <option value="">Filter by Author</option>
+    </select>
+    <select id="categoryFilter">
+      <option value="">Filter by Category</option>
+    </select>
+    <button onclick="sortByDate()">Sort by Date</button>
+  </div>
+
+  <div class="form-section">
+    <h2>Add / Edit Blog</h2>
+    <form id="blogForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="text" id="description" placeholder="Description" required />
+      <input type="url" id="url" placeholder="Blog URL" required />
+      <input type="text" id="author" placeholder="Author" required />
+      <input type="date" id="date" required />
+      <input type="text" id="category" placeholder="Category" required />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div id="blogsContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
